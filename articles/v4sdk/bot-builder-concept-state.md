@@ -60,7 +60,7 @@ These predifined buckets are scoped to a certain visibility, depending on the bu
 
 > [!TIP]
 > Both user and conversation state are scoped by channel.
-> The same person using different channels to access your bot appears as different users, one for each channel, and each with a distinct user state.
+ > The same person using different channels to access your bot appears as different users, one for each channel, and each with a distinct user state.
 
 The keys used for each of these predefined buckets are specific to the user and conversation, or both. When setting the value of your state property, the key is defined for you internally with information contained on the turn context to ensure that each user or conversation gets placed in the correct bucket and property. Specifically, the keys are defined as follows:
 
@@ -114,7 +114,7 @@ The accessor methods are the primary way for your bot to interact with state. Ho
   - Accessor requests property from the state cache.
   - If the property is in the cache, return it. Otherwise, get it from the state management object.
     (If it is not yet in state, use the factory method provided in the accessors *get* call.)
--The accessor's *set* method:
+- The accessor's *set* method:
   - Update the state cache with the new property value.
 - The state management object's *save changes* method:
   - Check the changes to the property in the state cache.
